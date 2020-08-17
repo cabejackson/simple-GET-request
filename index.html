@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dog API Example</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dog API: A Simple Example</h1>
+        <!-- I gave the form an id, so it can be referenced clearly -->
+        <form id="random-dog-image-form">
+            <!-- Text that tells user to input a number -->
+            <label>Input a number between 1 - 50</label>
+            <!-- The input box itself, which has an id called user-input & set to required -->
+            <input type="text" id="user-input" placeholder="e.g. 45" required>
+            <!-- button triggering the event listener (doesn't currently work) -->
+            <button type="submit">Enter</button>
+          <!-- replaced this -> <input type="submit" value="Get a dog pic!"> with above-->
+        </form>
+        <!-- this section will be used for problem 2 -->
+        <section class="results hidden">
+          <h2>Look at this dog!</h2>
+          <img class="results-img" alt="placeholder">
+        </section>
+    </div>
+    <!-- what's the integrity tag, also will we always need src=jQuery? -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
