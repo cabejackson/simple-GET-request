@@ -16,17 +16,14 @@
             <!-- Text that tells user to input a number -->
             <label>Input a number between 1 - 50</label>
             <!-- The input box itself, which has an id called user-input & set to required -->
-            <input type="text" id="user-input" placeholder="e.g. 45" required>
+            <input type="text" class="userInput" placeholder="e.g. 45" required>
             <!-- button triggering the event listener (doesn't currently work) -->
-            <button type="submit">Enter</button>
+            <button type="submit" class="userInput">Enter</button>
           <!-- replaced this -> <input type="submit" value="Get a dog pic!"> with above-->
         </form>
-        <!-- this section will be used for problem 2 -->
-        <section class="results hidden">
-          <h2>Look at this dog!</h2>
-          <img class="results-img" alt="placeholder">
-        </section>
     </div>
+        <!-- this section will be used for problem 2 -->  
+    <div class="results-img" alt="placeholder"></div>
     <!-- what's the integrity tag, also will we always need src=jQuery? -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="index.js"></script>
